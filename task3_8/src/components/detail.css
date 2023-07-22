@@ -1,0 +1,95 @@
+.container_user {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.container_elem {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    margin-bottom: 30px;
+}
+
+.icon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+}
+
+.data_user {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    font-size: 18px;
+}
+
+.category {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: rgb(183, 194, 194);
+    margin: 0;
+}
+
+.btn_back {
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.btn_back:hover {
+    background-color: rgba(1, 1, 1, 0.8);
+}
+
+ul {
+    margin-bottom: 40px;
+}
+
+.container_list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.tab_user {
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+    margin: 10px auto;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tab_user:hover {
+    background-color: rgba(1, 1, 1, 0.8);
+}
+
+.tab_user_active {
+    background-color: rgba(1, 1, 1, 0.8);
+    }
+
+.container_list li {
+    margin-left: 0;
+}

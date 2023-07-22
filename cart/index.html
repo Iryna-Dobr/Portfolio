@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <button class="burger">
+                <span class="burger_line"></span>
+            </button>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="nav_active"><a href="#">Додому</a></li>
+                    <li><a href="./products.html">Товари</a></li>
+                    <li><a href="./about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <h1 class="name_shop">Аеліта</h1>
+            <div class="cart_wrapper">
+                <a href="#" class="cart_icon"><img src="./images/icons24.png"></a>
+                <span class="cart_quantity"></span>
+            </div>
+            <aside class="cart">
+                <img class="cart_close" src="./images/close-24.png">
+                <h1>Ваш кошик</h1>
+                <div class="cart_container">
+                    <!-- Dynamic data from JS -->
+                </div>
+                <div class="total">
+                    <!-- Dynamic data from JS -->
+                </div>
+            </aside>
+            <div class="modal">
+                <div class="modal_bg">
+                    <div class="modal_container">
+                        <img class="modal_close" src="./images/close-24.png">
+                        <h1 class="modal_content">Замовлення оформлене!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_wrapper">
+            <h1>Створіть неповторний колорит у вашому житті</h1>
+            <p>Великий асортимент декоративних рослин</p>
+            <a href="./products.html" class="go_catalog">Перейти</a>
+        </div>
+    </main>
+    <div class="popular_wrapper">
+        <h1 class="title">Популярні товари</h1>
+        <section class="popular_products">
+            <!-- Dynamic data from JS -->
+        </section>
+    </div>
+
+    <script src="./js/catalog.js"></script>
+    <script src="./js/popular.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

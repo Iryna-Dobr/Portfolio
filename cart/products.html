@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <button class="burger">
+                <span class="burger_line"></span>
+            </button>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a href="./index.html">Додому</a></li>
+                    <li class="nav_active"><a href="#">Товари</a></li>
+                    <li><a href="./about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <h1 class="name_shop">Аеліта</h1>
+            <div class="cart_wrapper">
+                <a href="#" class="cart_icon"><img src="./images/icons8-black24.png"></a>
+                <span class="cart_quantity"></span>
+            </div>
+            <aside class="cart">
+                <img class="cart_close" src="./images/close-24.png">
+                <h1>Ваш кошик</h1>
+                <div class="cart_container">
+                    <!-- Dynamic data from JS -->
+                </div>
+                <div class="total">
+                    <!-- Dynamic data from JS -->
+                </div>
+            </aside>
+            <div class="modal">
+                <div class="modal_bg">
+                    <div class="modal_container">
+                        <img class="modal_close" src="./images/close-24.png">
+                        <h1 class="modal_content">Замовлення оформлене!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Товари</h1>
+    </main>
+    <div class="wrapper">
+        <aside class="filter">
+            <input type="text" placeholder="Search..." class="search">
+            <nav>
+            <h1>Категорія</h1>
+            <ul class="filter_container">
+                <li class="filter_item"><button class="btn active" data-filter="all">Всі</button></li>
+                <li class="filter_item"><button class="btn" data-filter="coniferous">Хвойні рослини</button></li>
+                <li class="filter_item"><button class="btn" data-filter="bulb">Цибулинні квіти</button></li>
+                <li class="filter_item"><button class="btn" data-filter="perennial">Багаторічні квіти</button></li>
+                <li class="filter_item"><button class="btn" data-filter="herbs">Декоративні та пряні трави</button></li>
+            </ul>
+            </nav>
+            <h1>Ціна</h1>
+            <input type="range" min="80" max="2800" step="1" value="2800" class="price">
+            <p class="max_price">2800 &#8372</p>
+        </aside>
+        <section class="catalog_products">
+            <!-- Dynamic data from JS -->
+        </section>
+    </div>
+    <script src="./js/catalog.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <button class="burger">
+                <span class="burger_line"></span>
+            </button>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a href="./index.html">Додому</a></li>
+                    <li><a href="./products.html">Товари</a></li>
+                    <li class="nav_active"><a href="#">Про нас</a></li>
+                </ul>
+            </nav>
+            <h1 class="name_shop">Аеліта</h1>
+            <div class="cart_wrapper">
+                <a href="#" class="cart_icon"><img src="./images/icons8-black24.png"></a>
+                <span class="cart_quantity"></span>
+            </div>
+            <aside class="cart">
+                <img class="cart_close" src="./images/close-24.png">
+                <h1>Ваш кошик</h1>
+                <div class="cart_container">
+                    <!-- Dynamic data from JS -->
+                </div>
+                <div class="total">
+                    <!-- Dynamic data from JS -->
+                </div>
+            </aside>
+            <div class="modal">
+                <div class="modal_bg">
+                    <div class="modal_container">
+                        <img class="modal_close" src="./images/close-24.png">
+                        <h1 class="modal_content">Замовлення оформлене!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Про нас</h1>
+    </main>
+    <article class="about">
+        <h1>Про компанію</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos debitis vero est dolores
+            expedita error eos fuga veniam ratione facilis quidem tempore maxime commodi quisquam cupiditate
+            consequatur. Debitis voluptatum nihil delectus possimus suscipit voluptate, esse animi veniam doloremque
+            dolores officiis quam eveniet facere incidunt maiores mollitia in excepturi iure illum harum id ut? Porro,
+            sequi! Consequuntur, quos sequi nesciunt harum error quibusdam dolorem deleniti veniam atque nulla laborum
+            ipsa inventore qui animi fuga ut! Fuga numquam enim neque error?</p>
+    </article>
+
+    <script src="./js/catalog.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

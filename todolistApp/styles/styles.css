@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(248, 248, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+h1 {
+    font-size: 26px;
+    margin: 20px 40px;
+    color: rgba(10, 16, 85, 0.801);
+    text-align: center;
+}
+
+.add_new_todo {
+    margin: 20px 40px;
+    display: flex;
+}
+
+.new_todo {
+    border: 0;
+    background-color: rgb(234, 241, 255);
+    height: 20px;
+    width: 330px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn_save {
+    border: 0;
+    background-color: rgba(128, 212, 238, 0.842);
+    width: 70px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.add_todo:hover {
+    color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(25, 180, 231, 0.842);
+    ;
+}
+
+.element_todo {
+    display: grid;
+    grid-template-columns: 1fr 30px 30px;
+    margin: 0 50px 20px 30px;
+
+}
+
+.element {
+    grid-column: 1/2;
+    cursor: pointer;
+}
+
+.edit {
+    grid-column: 2/3;
+    cursor: pointer;
+}
+
+.check {
+    text-decoration: line-through;
+    color: rgba(10, 16, 85, 0.801);
+    ;
+}
+
+.delete {
+    grid-column: 3/4;
+    cursor: pointer;
+}
+
+.btn_wrapper {
+    margin: 20px 40px 10px 40px;
+    text-align: center;
+}
+
+.btn_clear {
+    cursor: pointer;
+    font-size: 12px;
+    color: red;
+    font-stretch: ultra-expanded;
+    letter-spacing: 5px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.6s;
+}
+
+.clear:hover {
+    transform: scale(1.1);
+}
